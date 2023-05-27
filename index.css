@@ -10,8 +10,9 @@ html, body {
 
 .container {
     display: flex;
+    align-items: center;
     flex-direction: column;
-    max-width: 320px;
+    max-width: 60vw;
     margin: 30px auto;
 }
 
@@ -19,7 +20,9 @@ img {
     width: 150px;
     margin: 0 auto;
 }
-
+.svg{
+    width: 60%;
+}
 input {
     color: black;
     background-color: rgba(0, 0, 0, 0.365);
@@ -51,9 +54,11 @@ button {
 button:hover {
     background-color: #432000;
     cursor: pointer;
+    white-space: no-wrap;
 }
 
 ul {
+    width: 90vw;
     list-style-type: none;
     padding: 0;
     display: flex;
@@ -62,9 +67,13 @@ ul {
 }
 
 ul li {
-    font-size: 20px;
+    display: flex;
+    gap: 15px;
+    width: fit-content;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 19px;
     background-color: #FFFDF8;
-    padding: 15px;
     border-radius: 8px;
     flex-grow: 1;
     text-align: center;
@@ -74,4 +83,34 @@ ul li {
 ul li:hover {
     background-color: #FFECC7;
     cursor: pointer;
+}
+.delete-task{
+    color: red;
+    margin: 0;
+    text-align: center;
+    width: 30px; height: 30px;
+    border-radius: 50%;
+    background-color: rgba(172, 255, 47, 0.493);
+}
+p{
+    margin-left: 10px;
+}
+/* 
+.new-task{
+    padding:5px 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    max-height: 20px;
+} */
+@media screen and (max-width: 768px) {
+    button{
+        width: 60%;
+    }
+    .svg{
+        width: 60%;
+    }
+    
 }

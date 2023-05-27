@@ -52,14 +52,20 @@ function appendItemToShoppingListEl(item) {
     let itemValue = item[1]
     
     let newEl = document.createElement("li")
+    let deleteEl = document.createElement("button")
     
-    newEl.textContent = itemValue
+    newEl.innerHTML = `<p>${itemValue}</p>`
     
-    newEl.addEventListener("click", function() {
+    deleteEl.addEventListener("click", function() {
         let exactLocationOfItemInDB = ref(database, `shoppingList/${itemID}`)
         
         remove(exactLocationOfItemInDB)
     })
     
     shoppingListEl.append(newEl)
+    newEl.classList.add('new-task')
+    // Delete Fubctionality.
+    deleteEl.textContent = '0'
+    deleteEl.classList.add('delete-task')
+    newEl.appendChild(deleteEl)
 }
