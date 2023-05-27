@@ -1,0 +1,56 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <title>Add to Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hawawi Planner.</title>
+</head>
+<body>
+    
+    <div class="container">
+        <img src="assets/cat.png">
+        <input type="text" id="input-field" placeholder="eg  Train at 4PM...">
+        <button id="add-button">ADD TO PLAN</button>
+        <ul id="shopping-list">
+        </ul>
+    </div>
+    <script src="index.js" type="module"></script>
+
+
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyCklMs3bFKjXATihz982eSpt2zVZoFz_Io",
+          authDomain: "hawawi-planner.firebaseapp.com",
+          databaseURL: "https://hawawi-planner-default-rtdb.asia-southeast1.firebasedatabase.app",
+          projectId: "hawawi-planner",
+          storageBucket: "hawawi-planner.appspot.com",
+          messagingSenderId: "618449660647",
+          appId: "1:618449660647:web:a0ab2ddaa3dc5d38a4d042"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
+
+
+</body>
+</html>
