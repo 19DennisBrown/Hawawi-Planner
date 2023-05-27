@@ -87,24 +87,21 @@ ul li:hover {
 .delete-task{
     color: red;
     margin: 0;
-    text-align: center;
+    display: grid;
+    place-items: center;
     width: 30px; height: 30px;
     border-radius: 50%;
+    font-size: 12px;
     background-color: rgba(172, 255, 47, 0.493);
 }
 p{
     margin-left: 10px;
 }
-/* 
-.new-task{
-    padding:5px 15px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    max-height: 20px;
-} */
+#footer{
+    background-color:grey;
+    text-align:center;
+    width:100%;
+}
 @media screen and (max-width: 768px) {
     button{
         width: 60%;

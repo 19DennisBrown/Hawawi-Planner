@@ -65,7 +65,14 @@ function appendItemToShoppingListEl(item) {
     shoppingListEl.append(newEl)
     newEl.classList.add('new-task')
     // Delete Fubctionality.
-    deleteEl.textContent = '0'
+    deleteEl.innerHTML = <span class="material-symbols-outlined">
+                delete_forever
+            </span>
     deleteEl.classList.add('delete-task')
     newEl.appendChild(deleteEl)
 }
+
+// footer date
+const footerEl = document.querySelector('#footer')
+const day = new Date().getFullYear()
+footerEl.textContent +=  'footer';
