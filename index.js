@@ -61,10 +61,15 @@ function appendItemToShoppingListEl(item) {
         
         remove(exactLocationOfItemInDB)
     })
+    // Completed task
+    newEl.addEventListener("click", ()=>{
+        newEl.classList.toggle('completed')
+        alert('click')
+    })
     
     shoppingListEl.append(newEl)
     newEl.classList.add('new-task')
-    // Delete Fubctionality.
+    // Delete Functionality.
     deleteEl.textContent='X'
     deleteEl.classList.add('delete-task')
     newEl.appendChild(deleteEl)
