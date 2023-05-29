@@ -41,6 +41,7 @@ input {
     text-align: center;
     font-family: 'Rubik', sans-serif;
     margin: 10px 0;
+    outline: none;
 }
 
 button {
@@ -107,7 +108,8 @@ ul li:hover {
     border-bottom-left-radius: 0;
 }
 p{
-    /* margin-left: 10px; */
+    max-width: 80%;
+    /* white-space: nowrap; */
 }
 #footer{
     background-color:grey;
@@ -122,5 +124,14 @@ p{
     .svg{
         width: 60%;
     }
-    
+    ul li {
+        justify-content: space-between;
+        font-size: 16px;
+        background-color: #FFFDF8;
+        border-radius: 8px;
+        flex-grow: 1;
+        text-align: center;
+        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+        position:relative;
+    }
 }
