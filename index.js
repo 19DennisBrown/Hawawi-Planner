@@ -64,7 +64,6 @@ function appendItemToShoppingListEl(item) {
     // Completed task
     newEl.addEventListener("click", ()=>{
         newEl.classList.toggle('completed')
-        alert('click')
     })
     
     shoppingListEl.append(newEl)
