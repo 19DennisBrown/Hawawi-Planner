@@ -73,4 +73,4 @@ function appendItemToShoppingListEl(item) {
 // footer date
 const footerEl = document.querySelector('#footer')
 const day = new Date().getFullYear()
-footerEl.textContent +=  day+'footer';
+footerEl.textContent +=  `${day} All rights reserved`;

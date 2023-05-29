@@ -3,16 +3,22 @@
 html, body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
     background-color: #EEF0F4;
     color: #432000;
+    width: 100vw; height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    outline: none;
 }
 
 .container {
     display: flex;
     align-items: center;
     flex-direction: column;
-    max-width: 60vw;
+    width: 90%; 
     margin: 30px auto;
 }
 
@@ -58,7 +64,7 @@ button:hover {
 }
 
 ul {
-    width: 90vw;
+    width: 90%;
     list-style-type: none;
     padding: 0;
     display: flex;
@@ -68,9 +74,9 @@ ul {
 
 ul li {
     display: flex;
-    gap: 15px;
+    /* gap: 15px; */
     width: fit-content;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     font-size: 19px;
     background-color: #FFFDF8;
@@ -95,12 +101,13 @@ ul li:hover {
     background-color: rgba(172, 255, 47, 0.493);
 }
 p{
-    margin-left: 10px;
+    /* margin-left: 10px; */
 }
 #footer{
     background-color:grey;
     text-align:center;
-    width:100%;
+    /* width:100vw; */
+    padding: 10px 0;
 }
 @media screen and (max-width: 768px) {
     button{
